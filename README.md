@@ -55,4 +55,4 @@ I strongly recommend to use a [virtualenv](https://virtualenv.pypa.io/en/stable/
 
 Open a terminal and type the following line, it will install the package using pip:
 
-        pip install git+git://github.com/albertbup/deep-belief-network.git
+        pip install git+git://github.com/doncat99/deep-belief-network.git
