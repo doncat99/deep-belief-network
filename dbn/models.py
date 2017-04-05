@@ -587,7 +587,7 @@ class SupervisedDBNClassification(NumPyAbstractSupervisedDBN, ClassifierMixin):
         :param indexes: array-like, shape = (n_samples, )
         :return:
         """
-        return map(lambda idx: self.idx_to_label_map[idx], indexes)
+        return list(map(lambda idx: self.idx_to_label_map[idx], indexes))
 
     def _compute_output_units(self, vector_visible_units):
         """
