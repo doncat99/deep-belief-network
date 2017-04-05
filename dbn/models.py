@@ -487,7 +487,7 @@ class NumPyAbstractSupervisedDBN(AbstractSupervisedDBN):
         activation_output_layer = layers_activation[-1]
         delta_output_layer = self._compute_output_layer_delta(y, activation_output_layer)
         deltas.append(delta_output_layer)
-        layer_idx = range(len(self.unsupervised_dbn.rbm_layers))
+        layer_idx = list(range(len(self.unsupervised_dbn.rbm_layers)))
         layer_idx.reverse()
         delta_previous_layer = delta_output_layer
         for layer in layer_idx:
